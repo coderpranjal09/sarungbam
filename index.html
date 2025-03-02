@@ -15,25 +15,26 @@
         }
 
         header {
-            text-align: center;
-            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
             background-color: #0078d7;
             color: white;
         }
 
+        .logo {
+            margin-right: 20px; /* Space between logo and text */
+        }
+
         .logo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            object-fit: cover;
+            width: auto; /* Allow image to maintain its aspect ratio */
+            height: 150px; /* Set a fixed height or adjust as needed */
+            border: 2px solid white; /* Optional: Add a border */
         }
 
         .logo-icon {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
             background-color: #ccc;
             display: flex;
             align-items: center;
@@ -42,8 +43,12 @@
             color: #666;
         }
 
+        .header-text {
+            text-align: left;
+        }
+
         h1 {
-            margin: 10px 0 5px;
+            margin: 0 0 5px;
             font-size: 2.5em;
         }
 
@@ -103,8 +108,10 @@
             <img id="logoImage" src="Screenshot 2025-03-02 182950.png" alt="Sarungbam Group Logo" onerror="this.onerror=null;this.src='';document.getElementById('logoIcon').style.display='flex';">
             <div id="logoIcon" class="logo-icon">🏢</div>
         </div>
-        <h1>Sarungbam Group of Companies</h1>
-        <p>Building the Future, One Project at a Time</p>
+        <div class="header-text">
+            <h1>Sarungbam Group of Companies</h1>
+            <p>Building the Future, One Project at a Time</p>
+        </div>
     </header>
 
     <section>
