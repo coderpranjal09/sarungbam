@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarungbam Group of Companies</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #0078d7;
+            color: white;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        .logo-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #666;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0078d7;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0078d7;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Company Logo with Fallback to Icon -->
+            <img id="logoImage" src="https://example.com/path-to-company-logo.jpg" alt="Sarungbam Group Logo" onerror="this.onerror=null;this.src='';document.getElementById('logoIcon').style.display='flex';">
+            <div id="logoIcon" class="logo-icon">🏢</div>
+        </div>
+        <h1>Sarungbam Group of Companies</h1>
+        <p>Building the Future, One Project at a Time</p>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>
+            Sarungbam Group of Companies is a leading conglomerate specializing in construction, infrastructure development, 
+            and real estate. With decades of experience, we are committed to delivering high-quality projects that stand the 
+            test of time. Our mission is to innovate, inspire, and build a better tomorrow.
+        </p>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Construction</strong>: Residential, commercial, and industrial projects.</li>
+            <li><strong>Infrastructure Development</strong>: Roads, bridges, and public utilities.</li>
+            <li><strong>Real Estate</strong>: Property development and management.</li>
+            <li><strong>Consulting</strong>: Engineering and architectural design services.</li>
+            <li><strong>Sustainability</strong>: Green building and eco-friendly solutions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Decades of industry experience.</li>
+            <li>Commitment to quality and safety.</li>
+            <li>Innovative and sustainable solutions.</li>
+            <li>Customer-centric approach.</li>
+            <li>Timely project delivery.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@sarungbamgroup.com">info@sarungbamgroup.com</a></p>
+        <p>&copy; 2023 Sarungbam Group of Companies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle logo image fallback
+        const logoImage = document.getElementById('logoImage');
+        const logoIcon = document.getElementById('logoIcon');
+
+        logoImage.onerror = function() {
+            logoImage.style.display = 'none';
+            logoIcon.style.display = 'flex';
+        };
+    </script>
+</body>
+</html>
